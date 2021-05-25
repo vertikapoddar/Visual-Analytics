@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-05-25-draft-1/",
+    "title": "Draft 1",
+    "description": "This is to check whether the blog is created and we can complete the makeover",
+    "author": [
+      {
+        "name": "Vertika Poddar",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-05-25",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-25T21:41:41+08:00",
+    "input_file": "draft-1.utf8.md"
+  },
+  {
     "path": "posts/2021-05-22-dataviz-makeover-1/",
     "title": "DataViz Makeover 1",
     "description": "A short description of the post.",
