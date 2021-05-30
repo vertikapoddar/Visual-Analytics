@@ -111,12 +111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["DataViz Makeover 1"]},{"type":"character","attributes":{},"value":["DataViz Makeover for ISSS608: Visual Analytics\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Vertika Poddar"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]}]}]},{"type":"character","attributes":{},"value":["05-22-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["DataViz Makeover 1"]},{"type":"character","attributes":{},"value":["DataViz Makeover for ISSS608: Visual Analytics\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Vertika Poddar"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]}]}]},{"type":"character","attributes":{},"value":["05-22-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","Image/Original Visualization.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","Image/Base graph.jpg","Image/Cleaned Data.png","Image/Data_type.png","Image/DataClean1.png","Image/DataClean2.png","Image/Import Data.png","Image/Legend Title.png","Image/Measure Names_color.png","Image/Original Visualization.png","Image/Pivot.png","Image/Proposed Design.jpg","Image/Reference Line.png","Image/Relationship.png","Image/Rename Columns.png","Image/Step 1.png","Image/Step 2.png","Image/Tick Marks - X Axis.png","Image/Tick Marks - Y Axis.png","Image/X Axis Title.png","Image/Y Axis Title.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1477,13 +1477,301 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>#1. BACKGROUND The original visualization is created from the data provided by the Department of Statistics, Singapore (DOS). Context / Key takeaways - ?</p>
-<p>#2. Critiques and suggestions for the original visualization (table format) ##2.1 Clarity S/N CRITIQUES COMMENTS / SUGGETIONS 1. Graph Title – The title of the graph mentions the timeline as 2019-2020 which is ambiguous as the graph represents the data of two years. The title of the graph should be such as it gives 2. Use of different scale – Two different scale has been used to plot export and import data. This leads to misinterpretation and misrepresentation.<br />
-3. Incorrect axis title – The title of X Axis is ‘Month of Period’ whereas the X Axis label is that of the year. The title of the axis is not in sync with the labels. 4. Data not comparable – A separate graph for each country makes the comparison across countries difficult and in-turn makes the graph less handy and useful.<br />
-5. Currency not mentioned -<br />
-6. Graph for Japan is misleading<br />
-7. Source of the data not mentioned</p>
-<p>##2.2 Aesthetics S/N CRITIQUES COMMENTS / SUGGETIONS 1. Different fonts – Three different fonts have been used in the graph for the Axis Title, Axis Label and Graph Title. The text used in the graph should belong to the same font family. Moreover, the font should not be fancy and should be easy to read and understand. 2. Multiple axis for value – Two separate axis to represent export and import. The use of two separate value axis makes the graph complicated, confusing, and clumsy. The graph should be clear and pleasing to the eye. 3. No tick marks in the X and Y Axis</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#background">1. Background</a></li>
+<li><a href="#critiques-and-suggestions-for-the-original-visualization">2. Critiques and suggestions for the original visualization</a><ul>
+<li><a href="#clarity">2.1 Clarity</a></li>
+<li><a href="#aesthetics">2.2 Aesthetics</a></li>
+</ul></li>
+<li><a href="#alternate-graphical-presentation">3. Alternate Graphical Presentation</a><ul>
+<li><a href="#proposed-design">3.1 Proposed Design</a></li>
+<li><a href="#advantages-of-the-design">3.2 Advantages of the design</a></li>
+</ul></li>
+<li><a href="#proposed-visualization">4. Proposed Visualization</a></li>
+<li><a href="#data-visualization-steps">5. Data Visualization Steps</a><ul>
+<li><a href="#data-preparation">5.1 Data Preparation</a></li>
+<li><a href="#data-visualization">5.2 Data Visualization</a></li>
+</ul></li>
+<li><a href="#key-observations">6. Key Observations</a></li>
+<li><a href="#references">7. References</a></li>
+</ul>
+</nav>
+</div>
+<h1 id="background">1. Background</h1>
+<p>The original visualization is created from the data provided by the Department of Statistics, Singapore (DOS). <img src="Image/Original%20Visualization.png" /> <strong>Context</strong></p>
+<p>To show the volume of international trade over a period of two years from 2019-2020 for six economies of the world namely - Mainland China, US, Malaysia, Taiwan, Hong Kong and Japan.</p>
+<h1 id="critiques-and-suggestions-for-the-original-visualization">2. Critiques and suggestions for the original visualization</h1>
+<h2 id="clarity">2.1 Clarity</h2>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 52%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Critiques</th>
+<th>Comments / Suggestions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Graph Title</strong> - The title of the graph mentions ‘Top Six Trading Countries, 2019-2020’ whereas in terms of combined value of export and import for a period of two years, Japan should be replaced by Indonesia to justify ‘top six’.</td>
+<td>The title of the graph should not only be clear and concise but more importantly should be correct.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Use of different scale</strong> – The scale used to plot import and export data, especially in case of Hong Kong is not uniform. Export is in terms of millions and Imports is in terms of thousands.</td>
+<td>This practice leads to gross misinterpretation of the graph and makes the visualization practically redundant.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Incorrect axis title</strong> – The title of X Axis is ‘Month of Period’ whereas the X Axis label is that of the year. The title of the axis is not in sync with the labels.</td>
+<td>All the titles and the labels of the axis should be in place.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Data not comparable</strong> – A separate graph for each country makes the comparison across countries difficult and in-turn makes the graph less handy and useful.</td>
+<td>Graph should be designed keeping the key objective in mind.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Currency of the data is not mentioned</strong></td>
+<td>Incomplete information leads to assumptions and multiple interpretations.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Graph for Japan is misleading</strong> - While the title of X axis for all the countries shows a timeline for two years, in case of Japan it shows only 2020.</td>
+<td>There should be uniformity in the graph, otherwise it may lead to incorrect interpretation and defeat the purpose of visualization.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Source of the data not mentioned</strong></td>
+<td>The graph should state the source of the data for authenticity and clarity.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aesthetics">2.2 Aesthetics</h2>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 52%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Critiques</th>
+<th>Comments / Suggestions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Different fonts</strong> – Three different fonts have been used in the graph for the Axis Title, Axis Label and Graph Title.</td>
+<td>The text used in the graph should belong to the same font family. Moreover, the font should not be fancy and should be easy to read and understand.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Multiple axis for value</strong> – Two separate axis to represent export and import.</td>
+<td>The use of two separate value axis makes the graph complicated, confusing, and clumsy. The graph should be clear and pleasing to the eye.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>No tick marks in the X and Y Axis</strong> – There are no tick marks in-spite of representing continuous data.</td>
+<td>In case of continuous data, tick marks makes the graph easy and quick to comprehend.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="alternate-graphical-presentation">3. Alternate Graphical Presentation</h1>
+<h2 id="proposed-design">3.1 Proposed Design</h2>
+<p>The rough draft of proposed graphical presentation for the dataset is</p>
+<p><img src="Image/Proposed%20Design.jpg" /></p>
+<h2 id="advantages-of-the-design">3.2 Advantages of the design</h2>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 30%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>S/N</th>
+<th>Aspect</th>
+<th>Issue</th>
+<th>Action Taken</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Clarity</td>
+<td>Graph Title</td>
+<td>Modified to ‘Major Players of International Trade’</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Clarity</td>
+<td>Different Scale in the same graph</td>
+<td>Uniform scale for both Imports and Exports</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Clarity</td>
+<td>Title of Y Axis</td>
+<td>Removed as the X axis label depicts the timeline</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Clarity</td>
+<td>Cross-country data comparison is difficult</td>
+<td>One single graph with data of all the countries instead of six separate graphs</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Clarity</td>
+<td>Currency not mentioned</td>
+<td>The title of Y axis to highlight the currency</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Clarity</td>
+<td>Graph for Japan is misleading</td>
+<td>The new graph resolves the issue</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Clarity</td>
+<td>Source of the data not mentioned</td>
+<td>Source mentioned and data link provided</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Aesthetic</td>
+<td>Different usage of fonts</td>
+<td>Formatting done to ensure uniformity</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Aesthetic</td>
+<td>Dual axis for value</td>
+<td>One axis to represent both import and export values</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Aesthetic</td>
+<td>No tick marks in the X and Y Axis</td>
+<td>Tick marks included in both the axis for better interpretation of the data</td>
+</tr>
+</tbody>
+</table>
+<h1 id="proposed-visualization">4. Proposed Visualization</h1>
+<p>The remake of the given visualization can be accessed <a href="https://public.tableau.com/app/profile/vertika.poddar/viz/DataVizMakeover1-MajorPlayersofInternationalTrade/Dashboard1">here</a></p>
+<h1 id="data-visualization-steps">5. Data Visualization Steps</h1>
+<h2 id="data-preparation">5.1 Data Preparation</h2>
+<ol type="i">
+<li>MS Excel has been used to prepare the data for the purpose of visualization. There are three sheets in the Excel Workbook –</li>
+</ol>
+<ul>
+<li>Content – Remove as not relevant to our work.</li>
+<li>T1 – Contains Import Data, rename to ‘Import Data’</li>
+<li>T2 – Contains Export Data, rename to ‘Export Data’. All the steps below has been applied to both ‘Import Data’ and ‘Export Data’ sheets.</li>
+</ul>
+<ol start="2" type="i">
+<li>As the time frame is Jan’19 - Dec’20 delete all the other columns of both the Import and Export data.</li>
+<li>Clean the data further removing redundant rows from the top and bottom.</li>
+</ol>
+<p><img src="Image/DataClean1.png" width="100" /></p>
+<ol start="4" type="i">
+<li>As the visualization is concerned with six countries namely – Hong Kong, Mainland China, Japan, Malaysia, Taiwan and US, filter the dataset accordingly to select and keep only these six countries. Remove the rest of the countries from the base file.</li>
+</ol>
+<p><img src="Image/DataClean2.png" width="300" /></p>
+<ol start="22" type="a">
+<li>Make the data presentable by deleting the suffix “(Thousand Dollars)” from the name of the countries. The final dataset looks as:</li>
+</ol>
+<p><img src="Image/Done/Cleaned%20Data.png" width="300" /></p>
+<h2 id="data-visualization">5.2 Data Visualization</h2>
+<ol type="i">
+<li>Import the file is in Tableau.</li>
+</ol>
+<p><img src="Image/Import%20Data.png" style="width:80.0%" /></p>
+<ol start="2" type="i">
+<li>To Pivot the data – select all the columns with the time period (Jan’19 – Dec’20). Right click and select “Pivot”.</li>
+</ol>
+<p><img src="Image/Pivot.png" style="width:60.0%" /></p>
+<ol start="3" type="i">
+<li>Rename the headers – Rename ‘Variables’ to ‘Countries’, ‘Pivot Field Names’ to ‘Period’ and ‘Pivot Field Values’ to ‘Import’/’Export’</li>
+</ol>
+<p><img src="Image/Rename%20Columns.png" style="width:30.0%" /></p>
+<ol start="4" type="i">
+<li>Change Data Type of the ‘Period’ from ‘String’ to ‘Date’</li>
+</ol>
+<p><img src="Image/Data_type.png" style="width:50.0%" /></p>
+<ol start="22" type="a">
+<li>Link the two datasets – ‘Import Data’ and ‘Export Data’ by using the common fields of ‘Countries’ and ‘Period’</li>
+</ol>
+<p><img src="Image/Relationship.png" style="width:70.0%" /></p>
+<ol start="6" type="i">
+<li>Drag ‘Countries’ and ‘Period’ to Columns and ‘Measure Value’ to Rows</li>
+</ol>
+<p><img src="Image/Step%201.png" style="width:70.0%" /></p>
+<ol start="7" type="i">
+<li>Expand ‘Year(Period)’ tab to ‘Month(Period)’ and click on the tab to change the format to ‘Month’</li>
+</ol>
+<p><img src="Image/Step%202.png" style="width:30.0%" /></p>
+<ol start="8" type="i">
+<li>Drop ‘Measure Names’ to the ‘Color’ side panel to differentiate the Export and the Import values</li>
+</ol>
+<p><img src="Image/Measure%20Names_color.png" style="width:30.0%" /></p>
+<ol start="9" type="i">
+<li>This is how the base graph will look like</li>
+</ol>
+<p><img src="Image/Base%20graph.jpg" width="200" /></p>
+<ol start="24" type="a">
+<li>The title of Y Axis is relevant as the timeline is clearly shown. To remove the title, right click on the Y axis and select ‘Edit Axis’. Delete the title under ‘Axis Titles’</li>
+</ol>
+<p><img src="Image/Y%20Axis%20Title.png" style="width:70.0%" /></p>
+<ol start="11" type="i">
+<li>In a similar way, edit the title of the X Axis</li>
+</ol>
+<p><img src="Image/X%20Axis%20Title.png" style="width:70.0%" /></p>
+<ol start="12" type="i">
+<li>Give an appropriate title to the graph, change it to ‘Major Players of International Trade’</li>
+<li>Change the title of the legend from ‘Measure Names’ to ‘Type of Trade’</li>
+</ol>
+<p><img src="Image/Legend%20Title.png" style="width:30.0%" /></p>
+<ol start="14" type="i">
+<li>Format the title and label of the axis to ensure that there is similar font across.</li>
+<li>The data on both the X and the Y Axis is ‘continuous’ in nature, hence both the axis is modified to incorporate ‘tick marks’ for easy and better interpretation. For this, right click on the axis and select ‘Edit Axis’.</li>
+</ol>
+<p><img src="Image/Tick%20Marks%20-%20X%20Axis.png" style="width:50.0%" /><img src="Image/Tick%20Marks%20-%20Y%20Axis.png" style="width:50.0%" /></p>
+<ol start="16" type="i">
+<li>Add a reference line (right click on the axis and select ‘Add reference line’) to show the average value trade of the six countries – this will make comparison easy.</li>
+</ol>
+<p><img src="Image/Reference%20Line.png" style="width:40.0%" /></p>
+<ol start="17" type="i">
+<li>Format the title with grey background and white text.</li>
+<li>Move the worksheet to the dashboard.</li>
+<li>Use ‘Text’ under ‘Objects’ to add ‘Source’ and ‘Author’.</li>
+</ol>
+<h1 id="key-observations">6. Key Observations</h1>
+<ol type="i">
+<li>The impact of COVID – 19 is clearly evident in countries like Mainland China, Malaysia and United States. From the graph we can see that there is a dip in both exports and imports of these countries.</li>
+<li>While in five countries value of exports is dominated by the value of imports, or are at par, Hong Kong is a big exception. Hong Kong is primarily into exports. The value of imports made by Hong Kong comprises of around 10% of the value of exports. There is a wide gap (of approximately $5 million) in the exports and imports.</li>
+<li>Towards the second half of 2020, exports showed a significant improvement both in China and in US.</li>
+</ol>
+<h1 id="references">7. References</h1>
+<ol type="i">
+<li><a href="https://www.makeovermonday.co.uk/blog/">MakeoverMonday</a></li>
+<li><a href="https://www.storytellingwithdata.com/blog">Storytelling with data</a></li>
+<li><a href="http://dataremixed.com/2012/05/data-visualization-clarity-or-aesthetics/">Data Visualization: Clarity or Aesthetics?</a></li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
