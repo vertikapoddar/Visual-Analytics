@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 2"
 description: |
-  A makeover of the original visualization to overcome its flaws and showcase a more clear and truthful presentation of data using Tableau.
+  A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.
 author:
   - name: Vertika Poddar
     
@@ -18,7 +18,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 # 1.	Background
-The original visualization is created from the data provided by the Department of Statistics, Singapore (DOS). The data is available under the sub-section of [Merchandise Trade by Region / Market](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data)
+The original visualization is created from the data provided by the Department of Statistics, Singapore (DOS). The data is available under the sub-section of [Merchandise Trade by Region / Market.](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data)
 
 ![](images/Original visualization.png)
 
@@ -70,7 +70,7 @@ S/N	| Aspect |	Issue | Action Taken
 10.	|Aesthetic	|Size of the bubbles 	|The size of the bubbles is appropriately adjusted to avoid overlapping and provide a clear visualization.
 11.	|Aesthetic	|Choice of colours	|The bubble chart is designed using two color tones. Blue represents excess of Exports over Imports and Red represents excess of Imports over Exports
 12.	|Aesthetic	|No tick marks in both X and Y Axis 	|Tick marks included where axis represents continuous variables for better interpretation of the data
-13.	|Aesthetic	Inappropriate placement of Axis Title 	|Axis Title has been appropriately aligned and placed in the centre for better clarity.
+13.	|Aesthetic	|Inappropriate placement of Axis Title 	|Axis Title has been appropriately aligned and placed in the centre for better clarity.
 
 *Moreover, the Bubble chart has been animated and the entire dashboard has been made interactive to enable analysis of data from multiple perspectives.*
 

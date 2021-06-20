@@ -4,7 +4,6 @@ description: |
   DataViz Makeover for ISSS608: Visual Analytics
 author:
   - name: Vertika Poddar
-    url: Singapore Management University
 date: 05-22-2021
 output:
   distill::distill_article:
