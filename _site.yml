@@ -1,7 +1,7 @@
-name: "DataViz_blog"
-title: "DataViz Makeover"
+name: "Visual Analytics"
+title: "Visual Analytics"
 description: |
-  DataViz Blog Example
+  Exploration of the visual analytics technique
 output_dir: "_site"
 navbar:
   right:
