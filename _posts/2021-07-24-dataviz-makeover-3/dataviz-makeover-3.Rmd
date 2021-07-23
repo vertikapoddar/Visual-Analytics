@@ -1,13 +1,14 @@
 ---
-title: "dataviz makeover 3"
+title: "DataViz Makeover 3"
 description: |
-  A short description of the post.
+  A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.
 author:
   - name: Vertika Poddar
-    url: {}
-date: 07-24-2021
+date: 13-06-2021
 output:
   distill::distill_article:
+    toc: true
+    toc_depth: 2
     self_contained: false
 ---
 
@@ -15,9 +16,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+# 1.	Background
 
 
