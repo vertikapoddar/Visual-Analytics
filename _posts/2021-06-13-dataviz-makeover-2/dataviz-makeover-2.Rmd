@@ -1,22 +1,4 @@
----
-title: "DataViz Makeover 2"
-description: |
-  A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.
-author:
-  - name: Vertika Poddar
-    
-date: 06-13-2021
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 2
-    self_contained: false
----
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 # 1.	Background
 The original visualization is created from the data provided by the Department of Statistics, Singapore (DOS). The data is available under the sub-section of [Merchandise Trade by Region / Market.](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data)
 
