@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/2021-07-24-dataviz-makeover-3/",
-    "title": "dataviz makeover 3",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Vertika Poddar",
-        "url": {}
-      }
-    ],
-    "date": "2021-07-24",
-    "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-07-24T03:43:02+08:00",
-    "input_file": "dataviz-makeover-3.utf8.md"
-  },
-  {
     "path": "posts/2021-06-13-dataviz-makeover-2/",
     "title": "DataViz Makeover 2",
     "description": "A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.",
