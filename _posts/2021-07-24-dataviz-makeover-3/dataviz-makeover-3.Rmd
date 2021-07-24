@@ -1,0 +1,65 @@
+---
+title: "DataViz Makeover 3"
+description: |
+  A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.
+author:
+  - name: Vertika Poddar
+date: 23-07-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+# 1.	Background
+
+
+# 2.	Critiques and suggestions for the original visualization
+## 2.1 Clarity
+S/N |Critiques|Comments / Suggestions
+----|-------------------------------|------------------------
+
+
+## 2.2 Aesthetics
+S/N	|Critiques |Comments / Suggestions
+----|-------------------------------|------------------------
+
+
+# 3.	Alternate Graphical Presentation
+## 3.1 Proposed Design
+The rough draft of proposed graphical presentation of the dataset is given below:
+
+## 3.2 Advantages of the design
+S/N	| Aspect |	Issue | Action Taken
+-----|--------|-------------------|-------------------------------
+
+
+# 4.	Proposed Visualization
+
+The remake of the given visualization can be accessed [here]
+
+
+# 5.	Data Visualization Steps
+
+## 5.1 Data Preparation
+
+
+## 5.2	Data Visualization
+
+
+## 5.3.	Designing the Dashboard
+
+
+# 6.	Key Observations
+
+
+# 7.	References
+
++[Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html)
+
+
