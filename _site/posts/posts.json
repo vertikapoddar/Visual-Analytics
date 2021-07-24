@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-07-24-dataviz-makeover-3/",
+    "title": "dataviz makeover 3",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Vertika Poddar",
+        "url": {}
+      }
+    ],
+    "date": "2021-07-24",
+    "categories": [],
+    "contents": "\r\n1. Background\r\n2. Critiques and suggestions for the original visualization\r\n2.1 Clarity\r\nS/N\r\nCritiques\r\nComments / Suggestions\r\n2.2 Aesthetics\r\nS/N\r\nCritiques\r\nComments / Suggestions\r\n3. Alternate Graphical Presentation\r\n3.1 Proposed Design\r\nThe rough draft of proposed graphical presentation of the dataset is given below:\r\n3.2 Advantages of the design\r\nS/N\r\nAspect\r\nIssue\r\nAction Taken\r\n4. Proposed Visualization\r\nThe remake of the given visualization can be accessed [here]\r\n5. Data Visualization Steps\r\n5.1 Data Preparation\r\n5.2 Data Visualization\r\n5.3. Designing the Dashboard\r\n6. Key Observations\r\n7. References\r\n+Visualizing uncertainty\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-07-24T18:51:10+08:00",
+    "input_file": "dataviz-makeover-3.utf8.md"
+  },
+  {
     "path": "posts/2021-06-13-dataviz-makeover-2/",
     "title": "DataViz Makeover 2",
     "description": "A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.",
