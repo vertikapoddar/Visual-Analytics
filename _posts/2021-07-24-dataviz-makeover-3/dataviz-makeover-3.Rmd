@@ -266,6 +266,17 @@ The Dashboard is ready for analysis!
 
 # 6.	Key Observations
 
+1. Jakarta Utara and Jakarta Timur have highest number of average positive and average recovered cases, where as Jakarta Selatan has better average recovery as compared to Jakarta Barat even though the average positive cases of the later is more.
+
+![](images/Positive_City.png){width=90%} ![](images/Recovered_City.png){width=90%}
+
+2. When comparing deaths Jakarta Timur supersedes all the other cities.
+
+![](images/deaths_city.png){width=90%}
+
+3. The district of Cengkareng has both the hightest number of death and treated cases of Covid - 19, while the next four districts are distinct in both the cases.
+
+![](images/Death_district.png){width=90%} ![](images/Treated_district.png){width=90%}
 
 # 7.	References
 
