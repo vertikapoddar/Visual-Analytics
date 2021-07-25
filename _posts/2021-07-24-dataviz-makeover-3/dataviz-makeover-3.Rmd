@@ -1,13 +1,15 @@
 ---
-title: "dataviz makeover 3"
+title: "DataViz Makeover 3"
 description: |
-  A short description of the post.
+  A makeover of the original visualization to overcome the flaws and showcase a more clear and truthful presentation of data using Tableau.
 author:
   - name: Vertika Poddar
     url: {}
 date: 07-24-2021
 output:
   distill::distill_article:
+    toc: true
+    toc_depth: 2
     self_contained: false
 ---
 
@@ -18,41 +20,248 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # 1.	Background
 
+The original visualization is created from the data provided by the DKI Jakarta Provincial Government. The data is available under the sub-section of [Open Data Covid-19 DKI Jakarta Province.](https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/)
+
+![](images/Original Visualization1.png)
+![](images/Original Visualization2.png)
+
+**Context**
+
+To support the news write-up of the latest development in DKI Jakarta with respect to Covid - 19 through two visual graphics. 
+
 
 # 2.	Critiques and suggestions for the original visualization
 ## 2.1 Clarity
 S/N |Critiques|Comments / Suggestions
 ----|-------------------------------|------------------------
-
+1. |**Type of graph not appropriate** – The two charts are attempting to visualize uncertainty, dot plots and bar charts and not best graphs for such representations. | Two most commonly used approaches to visualize uncertainty are error bars and confidence bands. 
+2. |**Missing information on Confidence Interval and Margin of Error** – The graphs is trying to convey data using the statistical approach. However, no information on the level of confidence interval and margin of error is mentioned anywhere in the graph. | The graphs should give a complete picture of the data being represented.
+3. |**Losing a lot of information from the data** – The dataset contains a lot of data points pertaining to Covid up-to a sub-district level, but such information is not highlighted in the present graphs. | The graphical representation should give a clear and truthful presentation of data.
+4. |**Graph title not in sync with the chart** – The tittle of the first graph is “Top five districts with the highest number…”, but the visualization captures the data of all the districts of DKI Jakarta. | The graph must have a proper title which sets the true context of the visualization.
+5. |**Source of the data not mentioned** | The graph should state the source of the data for authenticity and clarity.
 
 ## 2.2 Aesthetics
-S/N	|Critiques |Comments / Suggestions
-----|-------------------------------|------------------------
-
+S/N	|Critiques |Comments / Suggestions | Image
+----|-------------------------------|------------------------|-----------------------
+1. |**Annotations overlap data points** – The placement of the text annotation used to identify top 5 districts is done in such a way that it overlaps the data points, which makes it difficult to interpret the graph. | Annotations if used in graphs should be properly aligned to avoid overlapping.| ![](images/text annotation.png){width=70%}
+2. |**Y Axis labels of the first graph are not legible** – All the districts has been mapped in this graph, but the orientation and the size makes it difficult to read and use the visualization. | The size of the labels and its placement should enhance the usability of the graph. | ![](images/Y Axis.png){width=50%}
+3. |**Y Axis title of the first graph is incomplete** | Axis titles should be appropriately aligned and placed at the centre of the axis. This creates visibility and eliminates any ambiguity in interpretation.
+4. |**No tick marks in the X Axis**  – There are no tick marks in-spite of representing continuous data in both the visuals.| In case of continuous data, tick marks makes the graph easy and quick to comprehend.
 
 # 3.	Alternate Graphical Presentation
 ## 3.1 Proposed Design
 The rough draft of proposed graphical presentation of the dataset is given below:
 
+![](images/sketch.jpg)
+
 ## 3.2 Advantages of the design
 S/N	| Aspect |	Issue | Action Taken
 -----|--------|-------------------|-------------------------------
-
+1. |Clarity | Choice of graph | Error plots used to visualize uncertainty
+2. |Clarity | Missing information on Confidence Interval and Margin of Error | Tooltips appropriately mention the information for better interpretation
+3. |Clarity | Losing a lot of information from the data | The two visualizations are interactive which gives information on all the status given in the dataset
+4. |Clarity | Graph title not in sync with the chart | Appropriately modified
+5. |Clarity | Source of the data not mentioned | Source mentioned and data link provided
+6. |Aesthetic | Annotations overlap data points | No issue in the revised visuals
+7. |Aesthetic | Y Axis labels of the first graph are not legible | Size adjusted accordingly to increase visibility
+8. |Aesthetic | Y Axis title of the first graph is incomplete | Modified and resolved in the new visual
+9. |Aesthetic | No tick marks in X Axis | Tick marks included in for better interpretation of the data
 
 # 4.	Proposed Visualization
 
-The remake of the given visualization can be accessed [here]
+The remake of the given visualization can be accessed [here](https://public.tableau.com/app/profile/vertika.poddar/viz/DataVizMakeover3_16272098007240/Dashboard1)
 
 
 # 5.	Data Visualization Steps
 
 ## 5.1 Data Preparation
 
+1. Tableau Prep Builder 2021.1.3 has been used to prepare the data for the purpose of visualization.
+2.	Open the Tableau Prep Builder software and click on ‘Add Connections’ icon on the left hand side of the screen.
+
+![](images/Add connection.png){width=30%}
+
+3.	From the options under ‘To a File’ select ‘Microsoft Excel’.
+
+![](images/Connection_MS Excel.png){width=50%}
+
+4.	Navigate to the folder path where the base data downloaded from the *'Open Data Covid-19 Provinsi DKI Jakarta'* website has been stored. Open the file.
+
+5. Click on the ‘Use Data Interpreter’ option
+
+6. Use the file named 'data', add a clean step to it
+
+![](images/Clean_step.png){width=30%} 
+
+7. Clean the dataset to remove all the irrelevant columns. Remove all the columns except the following:
+*'Nama_provinsi', 'nama_kota', 'nama_kecamatan', 'nama_kelurahan',  'POSITIF', 'Dirawat', 'Sembuh', 'Meninggal', 'Self Isolation'*
+
+8. To remove the 'null' data, right click and click 'exclude'.
+
+![](images/Null value.png){width=70%} 
+
+9. The name of the columns of the dataset is in Indonesian, *google* them to find and replace with the corresponding English names. *(Refer the below table)*
+
+Indonesian	| English 
+--------|---------
+Nama_provinsi | Province
+nama_kota | City
+nama_kecamatan | District
+nama_kelurahan | Sub-district
+POSITIF | Positive
+Dirawat | Treated
+Sembuh | Recovered
+Meninggal | Death
+
+10. Save the output and name the file as ‘Indonesia_Covid Data’
+
+![](images/Output Node.png){width=30%}
+
+11. Use Tableau Desktop, drag and drop the above file on Tableau Desktop to establish a connection and start with data visualization.
+
 
 ## 5.2	Data Visualization
 
+1. Create a parameter - 'Status'. For this, right click on the Data Pane to select 'Create Parameter'.
+
+![](images/Create parameter.png){width=30%}
+
+2. Create the parameter 'Status'. To show the parameter, right click on 'Status', select 'Show Parameter', the parameter will now appear on the right hand side of the screen.
+
+![](images/Parameter - Status.png){width=50%}
+
+3. Use the ‘Create Calculated Field’ option under the ‘Analysis’ tab.
+
+![](images/1_Create calculated field.png){width=30%}
+
+4. Create a calculated field  -Number of records
+
+![](images/Number of records.png){width=60%}
+
+5. Create a calculated field  - Status
+
+![](images/Field - Status.png){width=60%}
+
+6. Create a calculated field  - Standard Error
+
+![](images/Standard error.png){width=60%}
+
+7. Create z scores for 95% and 99% confidence interval
+
+![](images/z_95.png){width=50%}  ![](images/z_99.png){width=50%}
+
+8. Create CI 95% and CI 99%
+
+![](images/CI_95.png){width=50%}  ![](images/CI_99.png){width=50%}
+
+9. Lower and Upper CI 95%
+
+![](images/Lower 95.png){width=50%}  ![](images/Upper 95.png){width=50%}  
+
+10. Lower and Upper CI 99%
+
+![](images/Lower 99.png){width=50%}  ![](images/Upper 99.png){width=50%}  
+
+11. Drag and drop 'City' to Rows and to Filters pane. Select only the following cities from the filter.
+
+![](images/City filter.png){width=40%}
+
+12. Drag and drop 'Measure Values' to Columns. From 'Measure Values' keep only Upper and Lower 99% and 95% and drop the rest. Further, rearrange the four metrics as shown in the figure below and change the chart type to 'Line'.
+
+![](images/Measure Values_ss.png){width=100%}
+
+13. Drag and drop 'Measure Names' to Path and to Color.
+
+![](images/Measure Name_Path.png){width=30%}
+
+14. Assign one color type to the 99%s and another color type to 95%s. Also, use the 'Color' pane to modify the lines and add markers.
+
+![](images/Measure Value_marker.png){width=20%}
+
+15. Drag and drop 'Status' to Columns and change it to average.
+
+![](images/Status_avg.png){width=60%}
+
+16. Right click on the x-axis  of new populated graph and select 'Dual Axis' followed by 'Synchnorize Axis' option.
+
+17. Change the chart type to 'Circle' and to increase the size of the circle modify the circle size using the 'Size' panel.
+
+![](images/Status_circle.png){width=30%}
+
+18. Right click on the 'Avg Status' axis and unselect the 'Show Header' option.
+
+![](images/Show header option.png){width=20%}
+
+19. Next change the Y Axis title.
+
+![](images/Y Axis Title.png){width=60%}
+
+20. Sort 'City' as shown in the figure
+
+![](images/City_sort.png){width=50%}
+
+21. Edit the Measure Value tooltip as shown
+
+![](images/Measure Value_tooltip.png){width=60%}
+
+22. Edit the Status tooltip as shown
+
+![](images/Status_tooltip.png){width=60%}
+
+23. To remove grid lines, right click on the screen and select format. Select lines option as shown in the figure.
+
+![](images/Grid Lines.png){width=30%}
+
+24. Adjust Tick marks for Y axis as shown below
+
+![](images/Tick Marks_Y axis.png){width=30%}
+
+25. To remove decimals, right click on Measure Value, select Format and do the formatting as below
+
+![](images/Decimal formatting.png){width=50%}
+
+26. To create an error plot for the Districts, first calculate the following fields.
+
+27. Proportion
+
+![](images/Proportion.png){width=60%}
+
+28. Standard Error for proportion
+
+![](images/Proportion_SE.png){width=60%}
+
+29. Lower and Upper limit 95% (in terms of % and value)
+
+![](images/Proportion_lower_95.png){width=50%}  ![](images/Proportion_upper_95.png){width=50%}  ![](images/Total_low 95.png){width=50%}  ![](images/Total_upp 95.png){width=50%}
+
+30. Lower and Upper limit 99% (in terms of % and value) (4)
+
+![](images/Proportion_lower_99.png){width=50%}  ![](images/Proportion_upper_99.png){width=50%}  ![](images/Total_low 99.png){width=50%}  ![](images/Total_upp 99.png){width=50%}
+
+31. Rankings
+
+![](images/Rankings_district.png){width=60%}
+
+32. Create a graph for Districts in similar lines discussed for City above, the snapshot of the error plot will is attached below:
+
+![](images/District Visualization.png){width=100%}
+
+33. Add title to both the charts created.
+
+
+
 
 ## 5.3.	Designing the Dashboard
+
+1. Use the Dashboard tab, drag the two sheets – ‘City’ and ‘District’ to the dashboard space.
+2.	Use ‘Text’ under ‘Objects’ to give appropriate title, add source, author and notes relevant to the graphs.
+3.	Now the ‘City’ chart has to be linked to the 'District' graph in such a way, that upon selecting the plot of the city, the district graphs only display the error plots of selected city only. For this click on the city graph and select the filter icon that gets displayed on the upper right hand corner of the chart.
+4.	Next under the ‘Dashboard’ tab select ‘Actions’. Then edit the filter options as shown in the screenshot below:
+
+![](images/Action filter.png){width=40%}
+
+
+The Dashboard is ready for analysis!
 
 
 # 6.	Key Observations
@@ -60,8 +269,13 @@ The remake of the given visualization can be accessed [here]
 
 # 7.	References
 
-+[Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html)
++ [Visualizing uncertainty](https://clauswilke.com/dataviz/visualizing-uncertainty.html)
 
++ [ISSS608: Visual Analytics – Lesson 4](https://isss608.netlify.app/lesson/Lesson04/Lesson04-Fundamentals_of_Visual_Analytics.pdf)
+
++ [Create Parameters](https://help.tableau.com/current/pro/desktop/en-us/parameters_create.htm)
+
++ [Understanding the willingness of public for COVID - 19 vaccination based on survey data](https://suyiinang.netlify.app/posts/dataviz_makeover/02_makeover/)
 
 
 
